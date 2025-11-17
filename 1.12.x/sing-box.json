@@ -11,6 +11,7 @@
         "tag": "ali",
         "type": "https",
         "server": "https://dns.pub/dns-query"
+        "detour": "proxy"
       },
       {
         "tag": "fakeip",
