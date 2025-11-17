@@ -10,7 +10,7 @@
       {
         "tag": "ali",
         "type": "https",
-        "server": "https://dns.pub/dns-query"
+        "server": "https://dns.pub/dns-query",
         "detour": "proxy"
       },
       {
