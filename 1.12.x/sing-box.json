@@ -2,9 +2,9 @@
   "dns": {
     "servers": [
       {
-        "tag": "google",
+        "tag": "Cloudflare",
         "type": "https",
-        "server": "8.8.8.8",
+        "server": "1.1.1.1",
         "detour": "proxy"
       },
       {
