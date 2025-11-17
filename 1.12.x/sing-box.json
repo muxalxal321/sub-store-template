@@ -49,7 +49,7 @@
         "server": "ali"
       }
     ],
-    "final": "google",
+    "final": "cloudflare",
     "independent_cache": true
   },
   "route": {
@@ -135,7 +135,7 @@
             "rule_set": [
               "cn_domain",
               "apple_domain",
-              "google_domain",
+              "cloudflare_domain",
               "telegram_domain",
               "netflix_domain"
             ]
@@ -157,11 +157,11 @@
       },
       {
         "rule_set": [
-          "google_ip",
-          "google_domain"
+          "cloudflare_ip",
+          "cloudflare_domain"
         ],
         "action": "route",
-        "outbound": "google"
+        "outbound": "cloudflare"
       },
       {
         "rule_set": [
@@ -224,17 +224,17 @@
         "download_detour": "direct"
       },
       {
-        "tag": "google_ip",
+        "tag": "cloudflare_ip",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/google.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/cloudflare.srs",
         "download_detour": "direct"
       },
       {
-        "tag": "google_domain",
+        "tag": "cloudflare_domain",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/google.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/cloudflare.srs",
         "download_detour": "direct"
       },
       {
@@ -312,7 +312,7 @@
       "default": "all-auto"
     },
     {
-      "tag": "google",
+      "tag": "cloudflare",
       "type": "selector",
       "outbounds": [
         "proxy",
